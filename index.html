@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WeChat UI Replica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'wechat-bg': '#EDEDED',
+              'wechat-green': '#95EC69',
+              'wechat-bubble-white': '#FFFFFF',
+              'wechat-header': '#EDEDED',
+              'wechat-footer': '#F7F7F7',
+              'wechat-input-border': '#E5E5E5',
+            },
+            fontSize: {
+              'xxs': '0.65rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit to mimic mobile feel or hide it */
+      ::-webkit-scrollbar {
+        width: 4px;
+        background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 4px;
+      }
+      body {
+        background-color: #EDEDED;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

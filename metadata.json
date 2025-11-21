@@ -1,0 +1,5 @@
+{
+  "name": "WeChat UI Replica",
+  "description": "A high-fidelity pixel-perfect replica of a chat interface using React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
